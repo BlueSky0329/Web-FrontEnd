@@ -93,13 +93,12 @@
 <body>
     <div class="container">
         <div class="form-box register-box">
-            <form action ="http://localhost:9001/user/register" method="post" class="form" id="registerForm">
+            <form action ="#"class="form">
                 <h2 class ="tit">Register</h2>
-
-                <input type="text" placeholder="yourname" class="input" name="name">
-                <input type="tel" placeholder="yourEmail" class="input" name="email">
-                <input type="password" placeholder="yourPassword" class="input" name="password">
-
+                
+                <input type ="txet" placeholder ="yourname" class ="input">
+                <input type="tel" placeholder="yourEmail" class ="input">
+                <input type ="password" placeholder ="yourPassword" class="input">
                 <button class ="btn">Sign-up</button>
                 <a class ="link" id="loginBut">Sign-in</a>
 
@@ -107,11 +106,10 @@
             
         </div>
         <div class="form-box login-box">
-            <form action ="http://localhost:9001/user/login" method="post" class="form" id="loginForm">
+            <form action ="#"class="form">
                 <h2 class ="tit">Sign-in</h2>
-                <input type="tel" placeholder="yourEmail" class="input" name="email">
-                <input type="password" placeholder="yourPassword" class="input" name="password">
-
+                <input type="tel" placeholder="yourEmail" class ="input">
+                <input type ="password" placeholder ="yourPassword" class="input">
                 <button class ="btn">Sign-up</button>
                 <a class ="link" id="registerBut">Sign-in</a>
             </form>
@@ -127,33 +125,6 @@
         
             registerBut.addEventListener("click", () => {
                 container.classList.add("on");
-            });
-            document.querySelectorAll('.form').forEach(form => {
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault();
-
-                    let formData = new FormData(event.target);
-                    let jsonData = {};
-
-                    formData.forEach((value, key) => {
-                        jsonData[key] = value;
-                    });
-
-                    fetch(event.target.action, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(jsonData)
-                    })
-                        .then(response => response.text())
-                        .then(data => {
-                            alert(data);
-                        })
-                        .catch(error => {
-                            alert('Error:', error);
-                        });
-                });
             });
         </script>
         
