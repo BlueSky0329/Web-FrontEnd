@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Main</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/common.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<section class="Topmenubg">
+				<div class="Topnav">
+					<div class="LeftNav">
+						<a href="login.html">register</a>/<a href="login.html">login</a>
+					</div>
+					<div class="RightNav">
+						<a href="user_center.html">user center</a> <a href="user_orderlist.html" target="_blank"
+							title="My order">My order</a> 
+					</div>
+				</div>
+			</section>
+			<div class="Logo_search">
+				<div class="Logo">
+					<img src="images/main/upload/dc.jpg" alt="">
+				</div>
+				<div class="Search">
+					<form method="get" id="main_a_serach" onsubmit="check_search(this)">
+						<div class="Search_nav" id="selectsearch">
+							<a href="javascript:;" onClick="selectsearch(this,'restaurant_name')" class="choose">restaurant</a>
+							<a href="javascript:;" onClick="selectsearch(this,'food_name')">food name</a>
+						</div>
+						<div class="Search_area">
+							<input type="search" id="fkeyword" name="keyword" placeholder="Please enter the name of the restaurant or food you are looking for..."
+								class="searchbox" />
+							<input type="submit" class="searchbutton" value="search" />
+						</div>
+					</form>
+					<p class="hotkeywords"><a href="#" title="Product name">Satay Chicken</a><a href="#" title="Product name">Steam prawn dumplings</a><a
+							href="#" title="Product name">S+P Squid </a><a href="#" title="Product name">Roast Pork</a><a href="#"
+							title="Product name">Asian green</a><a href="#" title="Product name">Korean Fried Chicken Tacos</a></p>
+				</div>
+			</div>
+			<nav class="menu_bg">
+				<ul class="menu">
+					<li><a href="index.html">Main Page</a></li>
+					<li><a href="#">Order</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="Cfn">
+
+			<div class="F-middle" style="width: 100%;">
+				<ul class="rslides f426x240" style="width: 100%;">
+					<li style="width: 100%;"><a href="javascript:"><img src="images/main/upload/01.jpg" style="width: 100%;" /></a>
+					</li>
+					<li style="width: 100%;"><a href="javascript:"><img src="images/main/upload/02.jpg" style="width: 100%;" /></a>
+					</li>
+					<li style="width: 100%;"><a href="javascript:"><img src="images/main/upload/03.jpg" style="width: 100%;" /></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="Sfainfor">
+			<article class="Sflist" style="width: 100%;">
+				<div id="Indexouter" style="display: flex;width: 100%;justify-content: space-between;">
+					<ul id="Indextab">
+						<li>restaurant</li>
+					</ul>
+					<div id="Indexcontent">
+						<ul style="display:block;">
+							<li>
+								<div class="DCcontent SCcontent" id="restaurant-container">
+									<!-- <a href="reservation.html" title="TITLE: Bamboo Leaf">
+											<figure style="width: 330px;">
+													<img src="images/main/upload/bamboo-leaf.jpg" style="width: 100%;">
+													<figcaption style="width: 100%;text-align: center;
+											line-height: 18px;">
+															<span class="title" style="border: none;font-size: 20px;line-height: 2;">Bamboo Leaf</span>
+													</figcaption>
+													<p class="p1"><q>Sittings: Lunchtime 12-2PM, First dinner 5-7PM, Second dinner 7-9PM; Banquets: Share Banquet $55PP (min 4 people), Feast Banquet $70PP (min 4 people)</q></p>
+													<p class="p2" style="line-height: 25px;">
+															Type: Modern Asian Fusion
+													</p>
+													<p class="p3" style="line-height: 0px;height: 13px;">Open: Tuesdays to Sundays</p>
+											<p class="p3" style="color: red;font-size: 14px;">Address: 25 Gouger Street, Adelaide</p>
+											</figure>
+									</a>
+
+									<a href="reservation.html" title="TITLE: Le Oeste">
+											<figure style="width: 330px;">
+													<img src="images/main/upload/le-oeste.jpg" style="width: 100%;">
+													<figcaption style="width: 100%;text-align: center;
+											line-height: 18px;">
+															<span class="title" style="border: none;font-size: 20px;line-height: 2;">Le Oeste</span>
+													</figcaption>
+													<p class="p1"><q>Sittings: Brunch 10AM-12PM, Lunch 12-2PM, First dinner 5-7PM, Second dinner 7-9PM</q></p>
+													<p class="p2" style="line-height: 25px;">
+															Type: Vibrant Brazilian
+													</p>
+													<p class="p3" style="line-height: 0px;height: 13px;">Open: Wednesday to Sunday</p>
+													<p class="p3" style="color: red;font-size: 14px;">Address:40 120 North Terrace, Adelaide</p>
+											</figure>
+									</a>
+
+									<a href="reservation.html" title="TITLE: Mexikana">
+											<figure style="width: 330px;">
+													<img src="images/main/upload/mexikana.jpg" style="width: 100%;">
+													<figcaption style="width: 100%;text-align: center;
+											line-height: 18px;">
+															<span class="title" style="border: none;font-size: 20px;line-height: 2;">Mexikana</span>
+													</figcaption>
+													<p class="p1"><q>Sittings: First dinner 5-7PM, Second dinner 7-9PM, Late night dinner 9-11PM; Banquets: Share Banquet $35PP (min 4 people)</q></p>
+													<p class="p2" style="line-height: 25px;">
+															Type: Korean Mexican fusion
+													</p>
+													<p class="p3" style="line-height: 0px;height: 13px;">Open: Monday to Saturday</p>
+											<p class="p3" style="color: red;font-size: 14px;">Address:40 FullartonRoad Norwood, Adelaide</p>
+											</figure>
+									</a> -->
+
+								</div>
+								<!-- <div class="SCcontent">
+									<a href="" target="_blank" title="菜品名称">
+										<figure>
+											<img src="images/main/upload/05.jpg">
+											<figcaption>
+												<span class="title">老李家的糖醋鲤鱼</span>
+												<span class="price"><i>￥</i>169.00</span>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="" target="_blank" title="菜品名称">
+										<figure>
+											<img src="images/main/upload/04.jpg">
+											<figcaption>
+												<span class="title">老李家的糖醋鲤鱼</span>
+												<span class="price"><i>￥</i>169.00</span>
+											</figcaption>
+										</figure>
+									</a>
+									<a href="" target="_blank" title="菜品名称">
+										<figure>
+											<img src="images/main/upload/06.jpg">
+											<figcaption>
+												<span class="title">老李家的糖醋鲤鱼</span>
+												<span class="price"><i>￥</i>169.00</span>
+											</figcaption>
+										</figure>
+									</a>
+								</div> -->
+
+							</li>
+						</ul>
+						<ul>
+							<li>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<script type="text/javascript" src="js/main/public.js"></script>
+		<script type="text/javascript" src="js/main/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="js/main/jqpublic.js"></script>
+		<script>
+			function alert(e){
+            $("body").append(`<div id="msg">${e}</div>`);
+            const timer = setTimeout(() => {
+                $("#msg").remove();
+                clearTimeout(timer);
+            }, 2000)
+        }
+
+
+			function selectsearch(theA,word){
+				obj=document.getElementById("selectsearch").getElementsByTagName("a");
+				for(var i=0;i< obj.length;i++ ){
+					obj[i].className='';
+				}
+				theA.className='choose';
+					if(word=='restaurant_name'){
+					document.getElementById('main_a_serach').action="search_s.html";//Test url
+					}else if(word=='food_name'){
+					document.getElementById('main_a_serach').action="search_p.html";//Test url
+					}
+				}
+				//INDEX TAB LIST
+				window.onload = function ()
+				{
+					var oLi = document.getElementById("Indextab").getElementsByTagName("li");
+					var oUl = document.getElementById("Indexcontent").getElementsByTagName("ul");
+					for(var i = 0; i < oLi.length; i++)
+					{
+						oLi[i].index = i;
+						oLi[i].onclick = function ()
+						{
+							for(var n = 0; n < oLi.length; n++) oLi[n].className="";
+							this.className = "current";
+							for(var n = 0; n < oUl.length; n++) oUl[n].style.display = "none";
+							oUl[this.index].style.display = "block"
+						}	
+					}
+				}
+				/*change radio background color*/
+				function changeColor(arg){  
+				var rdCount = document.getElementsByName("rdColor").length;  
+				for(i=1;i<=rdCount;i++){  
+				document.getElementById("style"+i).style.fontWeight = "normal"; 
+				document.getElementById("style"+i).style.backgroundColor = "";
+				document.getElementById("style"+i).style.boxShadow = "none"; 
+				document.getElementById("style"+i).style.border = "none";
+				}  
+				document.getElementById("style"+arg).style.backgroundColor = "#fff5cc";
+				document.getElementById("style"+arg).style.fontWeight = "bold";
+				document.getElementById("style"+arg).style.boxShadow = "3px 2px 10px #dedede";
+				document.getElementById("style"+arg).style.border = "1px #ffe580 solid";
+				}
+
+				let restaurant = '';
+				function check_search(form) {
+					const input = document.getElementById('fkeyword');
+					// 在这里处理获取到的输入框的值
+					restaurant = input.value;
+					getRestaurantList()
+					// 返回 false 可以阻止表单的默认提交行为
+					return false;
+				}
+
+				const getRestaurantList = async() => {
+					await axios({
+							url: 'http://localhost:3000/app/getRestaurantList',
+							method: 'post',
+							data: {
+								restaurant
+							}
+					}).then(res => {
+							if(res.data.code === 0) {
+									alert(res.data.msg)
+									restaurant = '';
+									const container = document.getElementById('restaurant-container');
+									res.data.data.forEach(item => {
+										const link = document.createElement('a');
+										link.href = 'reservation.html';
+										const htmlFragment = `
+											<figure style="width: 330px;">
+													<img src="${item.mainImage}" style="width: 100%;">
+													<figcaption style="width: 100%;text-align: center;
+											line-height: 18px;">
+															<span class="title" style="border: none;font-size: 20px;line-height: 2;">${item.title}</span>
+													</figcaption>
+													<p class="p1">${item.description}</p>
+													<p class="p3" style="line-height: 0px;height: 13px;">Open: ${item.openDay}</p>
+											<p class="p3" style="color: red;font-size: 14px;">Address: ${item.location}</p>
+											</figure>
+										`
+										link.innerHTML = htmlFragment;
+										container.appendChild(link);
+									})
+							}
+					}).catch(err => {
+							alert(err)
+					});
+				}
+				getRestaurantList()
+		</script>
+	</body>
+</html>

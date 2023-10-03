@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+body{margin:0 auto;padding:0;color:#333333;font-family:"Microsoft YaHei";font-size:12px;overflow-x:hidden;position:relative;}
+a,input{ text-decoration:none;color:#333333;outline: none;border:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;} 
+table {border-collapse:collapse;border-spacing:0;} 
+fieldset,img {border:0} 
+.clear{height:0px;clear:both;font-size:0px;line-height:0px;zoom: 1;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal} 
+ol,ul {list-style:none} 
+caption,th {text-align:left} 
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal} 
+abbr,acronym { border:0}
+::-moz-selection{background:#dddddd;}
+::selection {background:#dddddd;}
+code::-moz-selection {background:#dddddd;}
+code::selection {background:#dddddd;}
+/*PUBLIC CSS*/
+.Psection{margin:0 auto;width:1200px;height:auto;overflow:hidden;position:relative; clear:both;}/*PUBLIC SECTION `GLOBLE*/
+.MT20{margin-top:20px;}
+.FontW{font-weight:bold;}
+.Font12{font-size:12px;}
+.Font14{font-size:14px;}
+.Font16{font-size:16px;}
+.Fontfff{color:#fff;}
+.CorRed{color:#F00;}
+.Textcenter{text-align:center;}
+.Lineheight35{line-height:30px;}
+.Block{display:block;}
+.Blockinline{display:inline-block;}
+.Overflow{overflow:hidden;}
+.BlueA{color:#3366cc}
+ /*public form*/
+.input_name{border:1px #dddddd solid;padding:8px;width:120px;}
+.input_zipcode{border:1px #dddddd solid;padding:8px;width:120px;}
+.input_addr{border:1px #dddddd solid;width:500px;padding:8px;}
+.input_tel{border:1px #dddddd solid;padding:8px;width:120px;}
+.input_mark{border:1px #dddddd solid;width:500px;padding:8px;}
+.select_ssq{padding:5px;outline:none;}
+.Submit{padding:5px 8px; border:1px #dddddd solid;background:#cccccc;background-image: -moz-linear-gradient(top, #fff, #dddddd); /* Firefox */background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #dddddd)); /* Saf4+, Chrome */filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300', GradientType='0'); /* IE*/margin-right:8px;}
+
+.Number{border:1px #cccccc solid;padding:8px;}
+.Datetime{border:1px #cccccc solid;padding:5px;}
+/*Header css*/
+.Topmenubg{width:100%;height:40px;line-height:40px;border-bottom:1px #f4f4f4 solid;background:#f8f8f8;overflow:hidden;}
+.Topmenubg .Topnav{width:1200px;height:auto;margin:0 auto;}
+.Topmenubg .Topnav a{margin:0 8px;display:inline-block;}
+.Topmenubg .Topnav .LeftNav{widht:600px;float:left;}
+.Topmenubg .Topnav .RightNav{widht:600px;float:right;}
+.Logo_search{width:1200px;height:115px;line-height:115px;margin:0 auto;overflow:hidden;}
+.Logo_search .Logo{width:50%;float:left;}
+.Logo_search .Logo i{height:45px;width:1px;background:#d6d6d6; display:inline-block;vertical-align:middle;}
+.Logo_search .Logo span{font-size:14px;vertical-align:middle;margin:0 10px;color:#999;}
+.Logo_search .Logo span a{color:#ccc;}
+.Logo_search .Logo img{width:308px;height:89px;margin:13px 0;vertical-align:middle;}
+.Logo_search .Search{width:50%;float:left;padding-top:15px;height:100px;overflow:hidden;}
+.Logo_search .Search .hotkeywords{height:30px;line-height:30px;margin-top:2px;}
+.Logo_search .Search .hotkeywords a{margin-right:10px;}
+.Logo_search .Search .Search_nav{height:30px;line-height:30px;}
+.Logo_search .Search .Search_nav a{font-weight:bold;padding:5px 15px;position:relative; bottom:-2px;border-radius:5px 5px 0 0;}
+.Logo_search .Search .Search_nav a.choose{font-weight:bold;padding:5px 15px;position:relative; bottom:-2px;border-radius:5px 5px 0 0; background-color:#00661c; color:#fff;  }
+
+.Logo_search .Search .Search_area{width:100%;height:35px; overflow:hidden;}
+.Logo_search .Search .Search_area .searchbox{border:2px #00661c solid; float:left;height:35px;padding:5px 8px 5px 15px;width:450px;background:url(images/main/images/search_ico.png) no-repeat 2px 50%;}
+.Logo_search .Search .Search_area .searchbutton{background:#00661c;color:#fff;font-weight:bold;font-size:14px;padding:10px 15px;float:left;}
+
+/*menu*/
+.menu_bg{width:100%;margin:0 auto;height:80px;box-shadow:0 10px 20px #d3d3d3;border-top:3px #00670c solid;line-height:90px;}
+.menu_bg .menu{width:1200px;height:80px;line-height:80px;margin:0 auto;font-size:16px;font-weight:bold;display:box;display:-webkit-box;}
+.menu_bg .menu li{box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;text-align:center;border-right:1px #f5f5f5 dotted;float:left;width:288px;}
+.menu_bg .menu li:last-child{border:none;}
+.menu_bg .menu li a{display:block;}
+.menu_bg .menu li a:hover{color:#fd5411;}
+
+/*content(clock&focus&news&shop&food&aside_infor)*/
+.Cfn{width:1200px;height: auto;margin:20px auto 0; overflow:hidden; clear:both;}
+.Cfn .C-left{width:293px;height:auto;float:left;border:1px #dddddd solid;text-align:center;color:#00691a;font-weight:bold;font-size:12px;}
+.Cfn .C-left .S-time{height:47px;width:100%;line-height:47px;box-shadow:0 5px 5px #d3d3d3;}
+.Cfn .C-left .C-time{height:234px;width:auto;padding:20px 0;}
+.Cfn .C-left .C-time .clock{width:230px;height:230px;}
+.Cfn .F-middle{width:600px;height:403px;border:1px solid #E1E1E1;margin:0 4px; float:left;border:1px #dddddd solid;position:relative;}
+.Cfn .F-middle .rslides{width:600px;position:relative;list-style:none;padding:0}
+.Cfn .F-middle .rslides_tabs{ position:absolute; left:260px; top:370px;clear:both;text-align:center; z-index:99999;}
+.Cfn .F-middle .rslides_tabs li{display:inline;float:none;_float:left;*float:left;margin-right:5px}
+.Cfn .F-middle .rslides_tabs a{ width:12px; height:12px; background:#8e9f1d;text-indent:-5em; overflow:hidden; display:block; float:left; margin-left:6px;border-radius:6px;}
+.Cfn .F-middle .rslides_tabs .rslides_here a{ background:#D968C0;}
+.Cfn .N-right{width:293px;height:403px;float:right;border:1px #dddddd solid;}
+.Cfn .N-right .N-title{height:47px;line-height:47px;box-shadow:0 5px 5px #d3d3d3;padding:0px 15px;color:#272322;font-size:15px;font-weight:bold;}
+.Cfn .N-right .N-title i{font-size:12px;color:#949494; font-style: normal;}
+.Cfn .N-right .Newslist{height:auto;overflow:hidden;padding:10px 5px 0px 5px;border-bottom:1px #dbdbdb solid;display:block;}
+.Cfn .N-right .Newslist li{border-bottom:1px #dddddd dotted;height:32px;line-height:32px; overflow:hidden;}
+.Cfn .N-right .Newslist li i{border-top:5px solid #FFFFFF;border-left:5px solid #d8d8d8;border-bottom:5px solid #FFFFFF;display:inline-block;margin-right:5px;}
+.Cfn .N-right .Orderlist{height: auto;padding:10px 5px 0px 5px; color:#00a73e;display:block;}
+.Cfn .N-right .Orderlist li{height:84px;border-bottom:1px #dedede dotted;}
+.Cfn .N-right .Orderlist li p{line-height:25px;}
+.Cfn .N-right .Orderlist li p .State01{background:#e7f0ef;padding:3px 10px;border-radius:3px;font-style:normal;}
+.Cfn .N-right .Orderlist li p .State02{background:#77eca5;padding:3px 10px;border-radius:3px;font-style:normal;color:#fff;}
+.Cfn .N-right .Orderlist li p .State03{background:#08ae48;padding:3px 10px;border-radius:3px;font-style:normal;color:#fff; margin-left:8px;}
+/*Category list*/
+.CateL{width:900px;height:auto;margin-top:8px;float:left;}
+.CateL li{width:280px;border:2px #f8f8f8 solid;height:auto;overflow:hidden;float:left; margin:8px;box-sizing:border-box;text-align:center;}
+.CateL li:hover{border:2px #ff6600 solid;}
+.CateL li img{width:auto;max-width:100%;height:180px;margin:2px;}
+.CateL li p{margin:2px 5px;line-height:40px;height:40px;border-bottom:1px #f8f8f8 dotted; text-align:justify;}
+.CateL li p i{background:url(images/main/images/jf.png) no-repeat;width:30px;height:20px;display:inline-block;}
+.CateR{width:300px;height:auto;float:left;margin-top:8px;}
+.CateR .Hot_shop{border:1px #dddddd solid;width:298px;height:auto;}
+.CateR .Hot_shop .Hshoptile{border-bottom:1px #dddddd solid;line-height:40px;text-indent:1em;}
+.CateR .Hot_shop li{width:288px;margin:5px 5px 10px 5px;overflow:hidden;}
+.CateR .Hot_shop li img{float:left;width:136px;height:95px;border:1px #f1f1f1 solid;}
+.CateR .Hot_shop li p{width:145px;margin-left:5px;float:right;}
+/*shop&food&aside infor*/
+.Sfainfor{width:1200px;margin:10px auto;height:auto; overflow:hidden;}
+.Sfainfor .Sflist{width:902px;float:left;height:auto;}
+.Sfainfor .Sflist #Indexouter {width:900px;margin:0 auto;}
+.Sfainfor .Sflist #Indextab {overflow:hidden;zoom:1;background:#f8f8f8;border:1px solid #f5f5f5;}
+.Sfainfor .Sflist #Indextab li {float:left;color:#076720;height:30px;cursor:pointer;line-height:30px;list-style-type:none;padding:5px 30px;font-weight:bold;font-size:14px;border-right:1px #f5f5f5 solid;}
+.Sfainfor .Sflist #Indextab .class_B{width:460px;height:40px;line-height:40px;display:inline-block;float:right;}
+.Sfainfor .Sflist #Indextab .class_B a{padding:0 20px;border-left:1px #f5f5f5 solid;display:inline-block;}
+.Sfainfor .Sflist #Indextab .class_B span{color:#3f3f3f;font-weight:bold;}
+.Sfainfor .Sflist #Indextab .class_B span a{padding-left:80px;}
+.Sfainfor .Sflist #Indextab li.current {color:#076720;background:#fff;font-weight:bold;font-size:14px;}
+.Sfainfor .Sflist #Indexcontent {border-top-width:0;}
+.Sfainfor .Sflist #Indexcontent ul {display:none;margin:0px;padding:0;}
+.Sfainfor .Sflist #Indexcontent ul .seekarea{border:1px solid #f5f5f5;border-top:none;height:40px;line-height:40px;padding:0 10px;}
+.Sfainfor .Sflist #Indexcontent ul .seekarea a{padding:5px 10px;border-radius:2px;border:1px #ddd solid;margin:0 3px;}
+/*送餐*/
+.Sfainfor .Sflist #Indexcontent ul .SCcontent{width:auto;height:auto;clear:both;margin-top:10px;}
+.Sfainfor .Sflist #Indexcontent ul .SCcontent figure{width:284px;height:244px; float:left;overflow:hidden;border:1px #d1cdce solid;padding:1px;margin:0 7px 8px 5px;}
+.Sfainfor .Sflist #Indexcontent ul .SCcontent figure img{width:284px;height:200px;}
+.Sfainfor .Sflist #Indexcontent ul .SCcontent figure figcaption{background:#ececec;width:284px;height:40px;line-height:40px;padding:0 8px;}
+.Sfainfor .Sflist #Indexcontent ul .SCcontent figure figcaption .title{font-size:13px;color:#000;width:142px;text-align:left;display: inline-block;border-right:1px #dddddd solid;}
+.Sfainfor .Sflist #Indexcontent ul .SCcontent figure figcaption .price{font-size:18px;color:#F00;font-weight:bold;width:141px;display:display:inline-block;}
+.Sfainfor .Sflist #Indexcontent ul .SCcontent figure figcaption .price i{font-size:12px;font-style:normal;}
+/*订餐*/
+.Sfainfor .Sflist #Indexcontent ul .DCcontent{width:auto;height:auto;clear:both;margin-top:10px;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure{width:284px;height:373px; float:left;overflow:hidden;border:1px #d1cdce solid;padding:1px;margin:0 7px 8px 5px;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure:hover{border:1px #9fa900 solid;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure .p1{height:40px;line-height:20px;padding:0 8px;border-bottom:1px #fff solid;overflow:hidden;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure .p2{height:40px;line-height:40px;padding:0 8px;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure .p2 img{width:15px;height:15px;vertical-align:middle;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure .p3{height:46px;line-height:23px;padding:0 8px;border-top:1px #fff solid;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure img{width:284px;height:200px;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure figcaption{background:#f8f8f8;width:284px;height:40px;line-height:40px;padding:0 8px;border-bottom:1px #c4c4c4 solid;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure figcaption .title{font-size:13px;color:#000;font-weight:bold;width:142px;text-align:left;display: inline-block;border-right:1px #dddddd solid;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure figcaption .price{font-size:13px;color:#F00;width:141px;text-align:right;display:display:inline-block;}
+.Sfainfor .Sflist #Indexcontent ul .DCcontent figure figcaption .price i{font-size:13px;font-style:normal;background:#F00;padding:2px 5px;border-radius:3px;color:#0F0;}
+
+.Sfainfor .Sflist #Indexcontent ul .bestshop{width:auto;height:auto;clear:both;margin-top:10px;}
+.Sfainfor .Sflist #Indexcontent ul .bestshop figure{width:166px;height:117px; float:left;overflow:hidden;border:1px #d1cdce solid;padding:1px;margin:0 5px 8px 5px;}
+.Sfainfor .Sflist #Indexcontent ul .bestshop figure img{width:166px;height:117px;}
+.Sfainfor .A-infor{width:293px;float:left;height:auto;margin-left:5px;}
+.Sfainfor .A-infor .usercomment{width:auto;height:226px;border:1px #cccccc solid;}
+.Sfainfor .A-infor .usercomment span{height:35px;line-height:35px;background:#ececec;font-size:14px;font-weight:bold;padding-left:10px;display:block;border-bottom:1px #cccccc solid;color:#026320;}
+.Sfainfor .A-infor .usercomment li{padding:5px;height:84px;border-bottom:1px #cccccc dotted;line-height:25px;}
+.Sfainfor .A-infor .usercomment li img{width:75px;height:75px;padding:2px;border:1px #cccccc solid; border-radius:50%; float:left;margin-right:5px;}
+/*friend link*/
+.F-link{width:1200px;margin:0 auto;overflow:hidden;height:35px;line-height:35px;font-size:14px;}
+.F-link a{margin:0 8px;}
+.F-link span{font-size:15px;font-weight:bold;color:#006811;}
+/*FSlist page*/
+.fslist_navtree{width:1198px; margin:20px auto 0;border:1px #dddddd solid;overflow:hidden;}
+.fslist_navtree .select li{list-style:none;padding:10px 0 5px 80px}
+.fslist_navtree .select .select-list{border-bottom:#eee 1px dashed}
+.fslist_navtree .select dl{zoom:1;position:relative;line-height:24px;}
+.fslist_navtree .select dl:after{content:" ";display:block;clear:both;height:0;overflow:hidden}
+.fslist_navtree .select dt{width:100px;margin-bottom:5px;position:absolute;top:0;left:-100px;text-align:right;color:#666;height:24px;line-height:24px;font-weight:bold;}
+.fslist_navtree .select dd{float:left;display:inline;margin:0 0 5px 5px;}
+.fslist_navtree .select a{display:inline-block;white-space:nowrap;height:24px;padding:0 10px;text-decoration:none;border-radius:2px;}
+.fslist_navtree .select a:hover{background-color:#f3edc2}
+.fslist_navtree .select .selected a{color:#fff;background-color:#f60}
+.fslist_navtree .select-no{color:#999}
+.fslist_navtree .select .select-result a{padding-right:20px;background: url(images/main/images/close.gif) right 9px no-repeat #f60;}
+.fslist_navtree .select .select-result a:hover{background-position:right -15px}
+/*search productpage*/
+.Searchlist{width:900px;height:auto;float:left;}
+.Searchlist .slt{border-top:1px #dddddd solid;width:898px;}
+.Searchlist ul li{float:left;width:215px;height:auto;border:1px #ededed solid;padding:2px;margin:0px 4px 5px 0;}
+.Searchlist ul li:hover{border:1px #ff4400 solid;}
+.Searchlist ul li img{width:215px;height:151px;}
+.Searchlist ul li .P-price{line-height:28px;color:#ff4400;}
+.Searchlist ul li .P-title{line-height:28px;color:#3d3d3d;margin:0 5px;}
+.Searchlist ul li .P-shop{line-height:28px;margin:0 5px;height:28px;}
+.Searchlist ul li .P-shop .sa{color:#888888;float:left; text-decoration:underline;}
+.Searchlist ul li .P-shop .sp{color:#999;float:right;}
+
+.Sraside{width:290px;height:auto;float:left;margin-left:10px;}
+.Sraside .bestproduct{width:288px;border:1px #dddddd solid;margin:0 0 5px 0;}
+.Sraside .bestproduct .Bpt{height:45px;line-height:45px; text-indent:1em;border-bottom:1px #dddddd solid;}
+.Sraside .bestproduct ul{margin:8px 5px;overflow:hidden;}
+.Sraside .bestproduct li{width:278px;height:auto;overflow:hidden;margin:0 0 10px 0;border-bottom:1px #dddddd dotted;}
+.Sraside .bestproduct li img{float:left;width:118px;height:83px;}
+.Sraside .bestproduct li p{display:block;width:150px;height:83px;margin-left:10px;float:left;}
+.Sraside .bestproduct li p span{height:28px;line-height:28px;}
+.Sraside .bestproduct li p span i{font-style:normal;font-weight:bold;color:#ff6600;}
+/*search shoppage*/
+.Sraside .bestshop{width:288px;border:1px #dddddd solid; margin:0 0 5px 0;}
+.Sraside .bestshop .Bpt{height:45px;line-height:45px; text-indent:1em;border-bottom:1px #dddddd solid;}
+.Sraside .bestshop ul{margin:8px 5px;overflow:hidden;}
+.Sraside .bestshop li{width:278px;height:auto;overflow:hidden;margin:0 0 10px 0;border-bottom:1px #dddddd dotted;}
+.Sraside .bestshop li img{float:left;width:118px;height:83px;}
+.Sraside .bestshop li p{display:block;width:150px;height:83px;margin-left:10px;float:left;}
+.Sraside .bestshop li p span{height:28px;line-height:28px;}
+.Sraside .bestshop li p span i{font-style:normal;font-weight:bold;color:#ff6600;}
+/*FSlist content*/
+.Fslmenu{width:1198px;height:45px;line-height:45px;margin:0 auto;border:1px #dddddd solid;border-top:none;overflow:hidden;}
+.Fslmenu a{padding:0 20px;border-right:1px #dddddd solid;display:inline-block;}
+.Fslmenu a span{display:inline-block;}
+.Fslmenu a span .s-up{margin:0 5px;background:url(images/main/images/s-up.png) no-repeat;display:inline-block;width:7px;height:8px;}
+.Fslmenu a span .s-down{margin:0 5px;background:url(images/main/images/s-down.png) no-repeat;display:inline-block;width:7px;height:8px;}
+.Fsl{width:1200px;margin:10px auto;overflow:hidden;padding:0;font-size:13px;}
+.Fsl ul{width:900px;float:left;overflow:hidden;}
+.Fsl li{width:438px;height:403px;border:1px #dddddd solid;float:left;margin:0 8px 10px 0;}
+.Fsl li img{margin:5px;width:428px;height:240px;}
+.Fsl li hgroup{margin:0 5px;}
+.Fsl li hgroup h3{font-size:16px;font-weight:bold;}
+.Fsl li hgroup h4{font-size:13px;font-weight:normal;}
+.Fsl li p{width:428px;height:25px;line-height:25px;margin:5px;}
+.Fsl li p .Score-l{width:268px;height:auto; display:inline-block;}
+.Fsl li p img{width:15px;height:15px; vertical-align:central;margin:0;padding:0;}
+.Fsl li p .Score-v{font-size:24px;font-weight:bold;color:#f95f1f;display:inline-block;}
+.Fsl li p .DSBUTTON{background:#f76220;font-weight:bold;font-size:16px;color:#fff;display:inline-block;width:156px;height:40px;position: relative;top:-10px;right:-6px;text-align:center;line-height:40px;}
+.Fsl aside{width:300px;height:auto;overflow:hidden;float:right;}
+.Fsl aside .title{height:45px;line-height:45px;font-weight:bold;text-indent:1em;border:1px #dddddd solid;font-size:15px;}
+.Fsl aside .C-list{border:1px #dddddd solid; border-top:none;padding:5px;}
+.Fsl aside .C-list p{height:30px;line-height:30px; vertical-align:central;}
+.Fsl aside .C-list .ALscore{font-size:16px;font-weight:bold;color:#f8601f;}

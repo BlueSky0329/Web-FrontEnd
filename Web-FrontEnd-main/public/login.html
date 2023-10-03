@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="only front">
+    <title>User Login</title>
+    <link href="styles/login.css" rel="stylesheet" type="text/css" />
+    <link href="styles/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-box register-box">
+            <form action ="http://localhost:3000/app/user/register" method="post" class="form" id="registerForm">
+                <h2 class ="tit">Register</h2>
+                <input type="text" placeholder="yourUsername" class="input" name="username">
+                <input type="tel" placeholder="yourEmail" class="input" name="email">
+                <input type="password" placeholder="yourPassword" class="input" name="password">
+                <button class ="btn">Register</button>
+                <a class ="link" id="loginBut">Sign-in</a>
+            </form>
+        </div>
+        <div class="form-box login-box">
+            <form action ="http://localhost:3000/app/user/login" method="post" class="form" id="loginForm">
+                <h2 class ="tit">Sign-in</h2>
+                <input type="tel" placeholder="yourEmail" class="input" name="email">
+                <input type="password" placeholder="yourPassword" class="input" name="password">
+
+                <button class ="btn">Sign-in</button>
+                <a class ="link" id="registerBut">Register</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function alert(e){
+            $("body").append(`<div id="msg">${e}</div>`);
+            const timer = setTimeout(() => {
+                $("#msg").remove();
+                clearTimeout(timer);
+            }, 2000)
+        }
+
+        let loginBut = document.getElementById("loginBut");
+        let registerBut = document.getElementById("registerBut");
+        let container = document.querySelector(".container");
+        
+        loginBut.addEventListener("click", () => {
+            container.classList.remove("on");
+        });
+    
+        registerBut.addEventListener("click", () => {
+            container.classList.add("on");
+        });
+        document.querySelectorAll('.form').forEach(form => {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                let formData = new FormData(event.target);
+                let jsonData = {};
+
+                formData.forEach((value, key) => {
+                    jsonData[key] = value;
+                });
+                axios({
+                    url: event.target.action,
+                    method: 'post',
+                    data: jsonData
+                }).then(res => {
+                    if(res.data.code === 0) {
+                        alert(res.data.msg)
+                        if(res.data.msg === '登录成功！') {
+                            window.location.href = 'main.html';
+                        }else if(res.data.msg === '注册成功！'){
+                            window.location.href = 'login.html';
+                        }
+                    }else {
+                        alert(res.data.msg)
+                    }
+                }).catch(err => {
+                    alert(err)
+                });
+            });
+        });
+    </script>
+	<script type="text/javascript" src="js/main/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

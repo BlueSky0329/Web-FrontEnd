@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="styles/reservation.css">
+    <link href="styles/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="banner">
+        <img src="images/reservation/reservation-banner.jpg" alt="Restaurant Banner" class="banner-image">
+        <div class="banner-content">
+            <h1>Make a Reservation</h1>
+        </div>
+    </header>
+    <main>
+        <div class="reservation-form">
+            <form id="reservation-form">
+                <h2>Reserve a Table</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" min="1" required>
+                
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        function alert(e){
+            $("body").append(`<div id="msg">${e}</div>`);
+            const timer = setTimeout(() => {
+                $("#msg").remove();
+                clearTimeout(timer);
+            }, 2000)
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const reservationForm = document.getElementById('reservation-form');
+
+        if (!reservationForm) {
+            console.error("The reservation form element was not found.");
+            return;
+        }
+
+        reservationForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nameInput = document.getElementById('name');
+            const dateInput = document.getElementById('date');
+            const timeInput = document.getElementById('time');
+            const guestsInput = document.getElementById('guests');
+
+            if (!nameInput || !dateInput || !timeInput || !guestsInput) {
+                console.error("One or more form input elements were not found.");
+                return;
+            }
+
+            // Get form values
+            const name = nameInput.value;
+            const date = dateInput.value;
+            const time = timeInput.value;
+            const guests = guestsInput.value;
+
+            // Format the reservation details
+            const reservationDetails = `
+                Name: ${name}
+                Date: ${date}
+                Time: ${time}
+                Guests: ${guests}
+            `;
+            axios({
+                url: 'http://localhost:3000/app/submitReservations',
+                method: 'post',
+                data: {
+                    name,
+                    date,
+                    guests
+                }
+            }).then(res => {
+                if(res.data.code === 0) {
+                    alert(res.data.msg)
+                    // Reset the form
+                    reservationForm.reset();
+                    window.location.href = 'main.html';
+                }
+            }).catch(err => {
+                alert(err)
+            });
+        });
+    });
+
+    </script>
+    <script type="text/javascript" src="js/main/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
